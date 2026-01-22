@@ -1,6 +1,7 @@
 from db import SessionLocal
 from model import Player
 from datetime import datetime
+from sqlalchemy import Time
 
 
 def create_player(username: str, time: datetime.time):
