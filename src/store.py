@@ -1,5 +1,5 @@
 from db import SessionLocal
-from models import Player
+from model import Player
 from datetime import datetime
 
 
