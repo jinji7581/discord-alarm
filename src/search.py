@@ -1,5 +1,5 @@
 from db import SessionLocal
-from models import Player
+from model import Player
 
 
 def get_players_by_name(playername: str):
