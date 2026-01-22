@@ -3,8 +3,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 import mysql.connector
-from db.store import create_player
-from db.search import get_players_by_name
+from store import create_player
+from search import get_players_by_name
 from datetime import datetime
 
 
