@@ -9,7 +9,11 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Botのコードをコピー
+RUN echo "=== Before copying project ===" && ls -R /app
+
 COPY . /app
+
+RUN echo "=== After copying project ===" && ls -R /app
 
 # 起動コマンド
 CMD ["python", "src/bot.py"]
