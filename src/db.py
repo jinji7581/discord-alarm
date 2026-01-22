@@ -15,9 +15,9 @@ DATABASE_URL = (
 
 engine = create_engine(
     DATABASE_URL,
-    echo=False,        # True にすると SQL が表示される
+    echo=False,        #True にすると SQL が表示される
     pool_pre_ping=True
 )
 
 SessionLocal = sessionmaker(bind=engine)
-Base = declarative_base()   //ここのBaseを継承したクラスがそのままデータベースに反映？//
+Base = declarative_base()   #ここのBaseを継承したクラスがそのままデータベースに反映?
